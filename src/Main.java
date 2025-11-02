@@ -1,11 +1,13 @@
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        String message = "                        hello     " + " !";
+        int[] numbers= new int[5,2,4,5,6,7;]
 
-        System.out.println(message.trim());
-        System.out.println(message);
+
+        System.out.println(Arrays.toString(numbers));
+
 
 
 
