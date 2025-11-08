@@ -2,16 +2,10 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
-        int[] numbers= new int[5,2,4,5,6,7;]
-
-
-        System.out.println(Arrays.toString(numbers));
-
-
-
-
-
-
+    public static void main(String[] args) 
+    {
+      int[] numbers = {5, 3, 8, 1, 2};
+        System.out.println(numbers[0]);
+        System.out.println(numbers[2]);
     }
 }
