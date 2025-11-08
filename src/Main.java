@@ -7,5 +7,6 @@ public class Main {
       int[] numbers = {5, 3, 8, 1, 2};
         System.out.println(numbers[0]);
         System.out.println(numbers[2]);
+        System.out.println(numbers[4]);
     }
 }
