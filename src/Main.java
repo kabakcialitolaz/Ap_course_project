@@ -82,6 +82,9 @@ public class Main {
         System.out.println(numbers[4]);
 
         //ESCAPE SEQUENCES
+        // bu yazdırdığımız şeyin içinde bir daha parantez kullanabilmemizi sağlıyor
+        String message = "al\"h\"";
+        System.out.println(message);
         
     }
 }
