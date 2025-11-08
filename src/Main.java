@@ -85,6 +85,14 @@ public class Main {
         // bu yazdırdığımız şeyin içinde bir daha parantez kullanabilmemizi sağlıyor
         String message = "al\"h\"";
         System.out.println(message);
-        
+
+        /*8 KASIM 2025 ÖDEV
+            1. JAVA videosundaki ESCAPE SEQUENCES bölümüne kadar, eğitmenin yazdığı tüm kodlar, sırayla ve başlık atılarak
+                buraya geçişirilecek
+            2. Yukarıdaki ödevi tamamlayınca 01:03:15 e kadarki konular izlenecek ve 
+                oradaki kodlar da aynı şekilde buraya aktarılacak
+        SON TARİH: 16 KASIM 2025 PAZAR
+        */
+
     }
 }
