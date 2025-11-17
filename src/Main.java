@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) 
@@ -93,6 +94,29 @@ public class Main {
                 oradaki kodlar da aynı şekilde buraya aktarılacak
         SON TARİH: 16 KASIM 2025 PAZAR
         */
+        System.out.println("ali");
+        /* Bu kod yazılımın girişdir bu kod sayesinde istediğimiz bir sayı kelime veya be
+        String message= nzeri birşeyi yazdırabiliriz
+         */
+        String bildirim = "Ali" + "122";
+        System.out.println(bildirim.endsWith("122"));
+        /* Bu kod sayesind yazdıracağımız mesajın doğru yada yanlış olup olmadığını belirleyebiliriz
+         */
+        Byte age = 30;
+        Date now = new Date();
+        System.out.println(now);
+        /*Bu kod bizim güncel tarihi görmemizi ve istersek yaş hesaplaması yapmamızı sağlar
+         */
+        int myAge = 30;
+        int herAge = myAge;
+        System.out.println(herAge);
+        /*Bu bizim bir değişkeni öbürküne kopyalamamızı sağlar UYARI!! birinci harf küçük iken ikinci kelimenin ilk harfi büyüktür
+         */
+        
+
+
+
+
 
     }
 }
