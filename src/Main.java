@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -112,11 +111,39 @@ public class Main {
         System.out.println(herAge);
         /*Bu bizim bir değişkeni öbürküne kopyalamamızı sağlar UYARI!! birinci harf küçük iken ikinci kelimenin ilk harfi büyüktür
          */
+        /*--------------------------------------------------------------------------------------------------------------------------------*/
+        //17 KASIM 2025 PAZARTESİ
+        //01:30:45 e kadar izlenecek. videodaki (https://youtu.be/eIrMbAQSU34) tüm kodlar buraya aktarılacak, hangi kodun ne işe yaradığı mutlaka yorum satırı
+        //belirtilecek. Ben başlıkları senin yerine atacağım, eğer çalıştığın başlık varsa tekrar çalışmanı isteyeceğim:
         
+        //Arrays | 00:53:22
 
 
+        //Multi-Dimensional Arrays | 00:58:47
 
 
+        //Constants | 01:01:23
+
+
+        //Arithmetic Expressions | 01:03:15
+
+
+        //Order of Operations | 01:07:18
+
+
+        //Casting | 01:08:40
+
+
+        //The Math Class | 01:15:08
+
+
+        //Formatting Numbers | 01:19:50
+
+
+        //Reading Input | 01:25:40
+
+
+        //Son tarih: 22 Kasım 2025. Sorun olursa WhatsApp'dan yazabilirsin. Kolay gelsin:)
 
     }
 }
