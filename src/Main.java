@@ -1,5 +1,9 @@
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) 
@@ -117,30 +121,90 @@ public class Main {
         //belirtilecek. Ben başlıkları senin yerine atacağım, eğer çalıştığın başlık varsa tekrar çalışmanı isteyeceğim:
         
         //Arrays | 00:53:22
-
+        int[] numbers= new int[5];
+        numbers[0]= 1;
+        numbers[1]= 2;
+        System.out.println(numbers);
+        //bu bize  bu arrayın kimşiği gibi olan numara ve harf dizisini verir
+        Arrays.toString(numbers);
+        // ve bu kodu ekleyerek de gerçek değerimizi görürüz
+        int[] numbers = {2,3,5,6,7,};
+        System.out.println(numbers.length);
+        //bu da sayılarımızın toplam sayısını vermemizi sağlar
 
         //Multi-Dimensional Arrays | 00:58:47
+        int[][] numbers = new int[2][3];
+        System.out.println(Arrays.deepToString(numbers));
+        // bu sayede iki tane verimiz olursa ikisini farklı şekilde göstermemizi sağlar
 
 
         //Constants | 01:01:23
-
+        final float PI = 3.14F;
+        PI = 1;
+        // burada final kullanmamızın sebebi final koyulduktan sonra değerin değiştirelemeyecek olmasıdır
+        // bu sayede hesaplamalarda hat önlenmiş olur büyük f ise float veri olduğunu belirtmemizi sağlar
 
         //Arithmetic Expressions | 01:03:15
-
+        int result = 10 /3;
+        System.out.println(result);
+        // javada virgüllü bölünmeyi bu şekide belirtemeyiz bu bize 3 sonucunu verir
+        double result= (double) 10/(double) 3;
+        // bu sayede tam sonuca ulaşabiliriz
+        //ayrıca önüne ++ ekleyerek de veriyi istediğimiz kadar artırabiliriz
+        //ve örneğin x+1 = 4 işlemini yapıcaz 1+= 4 şekilde belirtebiliriz
 
         //Order of Operations | 01:07:18
+        int x = 10 + 3 * 2;
+        System.out.println(x);
+        // aslında burada 10 +3 ü önce yapmak istiyorsak öncelikle parantez kullanmalıyız
+        // yani bildiğimiz matematikteki işlem önceliği kuralları javda da geçerli
 
 
         //Casting | 01:08:40
-
+        // implicit
+        short x = 1;
+        int y = x + 2;
+        System.out.println(y);
+        // byte > short > int > long > float > double
+        String x = 1;
+        int y = Integer.parseInt(x) + 2;
+        System.out.println(y);
+        // bukadar uğraşmamızın başlıca sebebi
+        // stringleri sayısal verilere dönüştürerek yapmamız gerekmesidir
 
         //The Math Class | 01:15:08
-
+        int rsult =(int) Math .ceil(1.1F);
+        // bu sayede syımızı en yakın tam sayıya yuvarlayabiliriz
+        // ve aynı zamanda bunun gibi matematikte olan aritmetik ve diğer işleri yapmımıza olanak tanır
 
         //Formatting Numbers | 01:19:50
-
+        NumberFormat currency =  NumberFormat.getCurrencyInstance();
+        currency.format(12345.123);
+        String rst = currency.format(12345.13);
+        System.out.println(rst);
+        // bu klass numaraları birimlere çevirmek için çok kullanışlıdır
 
         //Reading Input | 01:25:40
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age:");
+        byte ag = scanner.nextByte();
+        System.out.println("You are" + ag);
+        // bu sayede terminalde değişiklik yapılabilir örneğin bize ismimizi yada
+        // yaşımızı sorar(yukarıdaki kod) ve sonrasında "senin adın ali!" seklinde terminale komut verir bunların
+        // hepsini terminalden düzenlememizi sağlayan kod "in" dir
+        // ve tokenler vardır bir metod bir token olur yani isim yazdıracaksak soyadımızı
+        // vermez eğer soyad da istiyorsak scanner next line komutunu uygulamamız gerekir
+        //ve boşluk bırakarak yazıp sonrasında boşluksuz istiyorsak önceden gördüğümüz
+        // "trim"
+        // metodunu kullanırız
+        //ABİ ÖDEV TAMAM BAZI İSİM VE Y GİBİ DEĞİŞKENLERİ BİRDEN FAZLA VE DEĞİŞİK KOMUTLARDA
+        // KULLANDIĞIM İÇİN TERMİNALDE HATA VERİYOR FAKAT KODLAR DOĞRU VE DÜZGÜNCE ÇALIŞIYOR
+        // ASLINDA SADECE İSİMLERİ BİRDEN FAZLA YERDE KULLANDIĞIM İÇİN HATA VERİYOR
+        //YENİ ÖDEVE HAZIRIM
+
+
+
+
 
 
         //Son tarih: 22 Kasım 2025. Sorun olursa WhatsApp'dan yazabilirsin. Kolay gelsin:)
