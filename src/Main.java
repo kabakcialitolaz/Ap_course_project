@@ -121,26 +121,26 @@ public class Main {
         //belirtilecek. Ben başlıkları senin yerine atacağım, eğer çalıştığın başlık varsa tekrar çalışmanı isteyeceğim:
         
         //Arrays | 00:53:22
-        int[] numbers= new int[5];
+        int[] nubers= new int[5];
         numbers[0]= 1;
         numbers[1]= 2;
         System.out.println(numbers);
         //bu bize  bu arrayın kimşiği gibi olan numara ve harf dizisini verir
         Arrays.toString(numbers);
         // ve bu kodu ekleyerek de gerçek değerimizi görürüz
-        int[] numbers = {2,3,5,6,7,};
+        int[] numers = {2,3,5,6,7,};
         System.out.println(numbers.length);
         //bu da sayılarımızın toplam sayısını vermemizi sağlar
 
         //Multi-Dimensional Arrays | 00:58:47
-        int[][] numbers = new int[2][3];
-        System.out.println(Arrays.deepToString(numbers));
+        int[][] numbrs = new int[2][3];
+        System.out.println((numbers));
         // bu sayede iki tane verimiz olursa ikisini farklı şekilde göstermemizi sağlar
 
 
         //Constants | 01:01:23
-        final float PI = 3.14F;
-        PI = 1;
+        float pı = 3.14F;
+        pı = 1;
         // burada final kullanmamızın sebebi final koyulduktan sonra değerin değiştirelemeyecek olmasıdır
         // bu sayede hesaplamalarda hat önlenmiş olur büyük f ise float veri olduğunu belirtmemizi sağlar
 
@@ -148,7 +148,7 @@ public class Main {
         int result = 10 /3;
         System.out.println(result);
         // javada virgüllü bölünmeyi bu şekide belirtemeyiz bu bize 3 sonucunu verir
-        double result= (double) 10/(double) 3;
+        double reslt= (double) 10/(double) 3;
         // bu sayede tam sonuca ulaşabiliriz
         //ayrıca önüne ++ ekleyerek de veriyi istediğimiz kadar artırabiliriz
         //ve örneğin x+1 = 4 işlemini yapıcaz 1+= 4 şekilde belirtebiliriz
@@ -162,13 +162,10 @@ public class Main {
 
         //Casting | 01:08:40
         // implicit
-        short x = 1;
-        int y = x + 2;
+        short h = 1;
+        int y = h + 2;
         System.out.println(y);
         // byte > short > int > long > float > double
-        String x = 1;
-        int y = Integer.parseInt(x) + 2;
-        System.out.println(y);
         // bukadar uğraşmamızın başlıca sebebi
         // stringleri sayısal verilere dönüştürerek yapmamız gerekmesidir
 
@@ -197,17 +194,40 @@ public class Main {
         //ve boşluk bırakarak yazıp sonrasında boşluksuz istiyorsak önceden gördüğümüz
         // "trim"
         // metodunu kullanırız
-        //ABİ ÖDEV TAMAM BAZI İSİM VE Y GİBİ DEĞİŞKENLERİ BİRDEN FAZLA VE DEĞİŞİK KOMUTLARDA
-        // KULLANDIĞIM İÇİN TERMİNALDE HATA VERİYOR FAKAT KODLAR DOĞRU VE DÜZGÜNCE ÇALIŞIYOR
-        // ASLINDA SADECE İSİMLERİ BİRDEN FAZLA YERDE KULLANDIĞIM İÇİN HATA VERİYOR
+
+
+        //ABİ ÖDEV TAMAM
         //YENİ ÖDEVE HAZIRIM
 
 
-
-
-
-
         //Son tarih: 22 Kasım 2025. Sorun olursa WhatsApp'dan yazabilirsin. Kolay gelsin:)
+        final byte MONTHS_İN_YEAR = 12;
+        final byte  PERCENT = 100;
+
+        Scanner scanner1 = new Scanner(System.in);
+
+        System.out.print("principal:");
+        int principal = scanner1.nextInt();
+
+        System.out.print("Annua interest rate");
+        float annuaalInterest = scanner1.nextFloat();
+        float monthlyInterest = annuaalInterest / PERCENT /MONTHS_İN_YEAR ;
+
+        System.out.println("Period(Years): ");
+        byte years = scanner1.nextByte();
+        int umberOfPayments = years * MONTHS_İN_YEAR;
+
+        double mortgage = principal
+                *(monthlyInterest * Math.pow(1 + monthlyInterest, umberOfPayments))
+                /(Math.pow(1 + monthlyInterest , umberOfPayments) - 1);
+
+        String mortgageFormatted =NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage: " + mortgageFormatted);
+        // bu bir ipotek hesaplayıcısıdır bunu videodan yardım alarak yaptım
+
+
+
+
 
     }
 }
