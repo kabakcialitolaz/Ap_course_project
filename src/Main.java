@@ -1,6 +1,4 @@
-import java.text.FieldPosition;
 import java.text.NumberFormat;
-import java.text.ParsePosition;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
@@ -225,7 +223,111 @@ public class Main {
         System.out.println("Mortgage: " + mortgageFormatted);
         // bu bir ipotek hesaplayıcısıdır bunu videodan yardım alarak yaptım
 
+        // 2 ARALIK 2025 SALI YENİ ÖDEV
+        /* 
+            ===========================================================
+            =              MİNİ PROJE 1 - ÖDEV (GRADE CALCULATOR)    =
+            ===========================================================
+            Amaç:
+            - Kullanıcıdan ders isimlerini ve notlarını alıp ortalama hesaplayan
+            küçük bir Java uygulaması yazmak.
+            - Scanner, diziler, döngüler, if-else ve algoritma kurma becerilerini
+            geliştirmek.
 
+            Gereksinimler:
+            1. Kullanıcıya kaç ders olduğunu sor.
+            2. Bu sayıya göre:
+                String[] lessonNames
+                int[] lessonGrades
+                dizilerini oluştur.
+            3. Her dersin adını (String) ve notunu (int) kullanıcıdan for döngüsüyle al.
+            4. Bütün notların toplamını ve ortalamasını hesapla.
+            5. Ortalama puana göre harf notu ver:
+                    90-100 -> A
+                    80-89  -> B
+                    70-79  -> C
+                    60-69  -> D
+                    0-59   -> F
+            6. Sonuçları ekrana düzgün bir formatla yazdır:
+                Ders adı - Not
+                Ortalama
+                Harf notu
+            7. Kod mutlaka ayrı bir sınıfta yazılacaktır:
+                    public class GradeCalculator {
+                        public static void main(String[] args) {
+                            // Ödev buraya yapılacak
+                        }
+                    }
+
+            BONUS (İsteğe bağlı geliştirmeler):
+            - En yüksek ve en düşük notu bul.
+            - Geçti / Kaldı şeklinde yazdır (60 geçme notu).
+            - Ortalama değeri 2 basamaklı göster: String.format("%.2f", average)
+            - Kullanıcı ders isimlerinde boşluk bırakırsa "trim()" kullan.
+
+            Teslim:
+            - Kod dosyası oluşturulacak: GradeCalculator.java
+            - GitHub'a push edilecek.
+
+            Son tarih: 7 ARALIK 2025 PAZAR
+            ===========================================================
+            */
+
+
+
+            /* 
+            ===========================================================
+            =              MİNİ PROJE 2 - ÖDEV (NUMBER GUESS)         =
+            ===========================================================
+            Amaç:
+            - Random sayı üretip tahmin ettiren "Sayı Tahmin Oyunu" yapmak.
+            - Döngü, koşullar, Scanner, Math.random ve algoritma pratiği.
+
+            Gereksinimler:
+            1. Bilgisayar 1–100 arasında bir sayı üretecek:
+                    int secret = (int)(Math.random() * 100) + 1;
+
+            2. Kullanıcıdan sürekli tahmin al:
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Tahminin: ");
+                    int guess = scanner.nextInt();
+
+            3. Tahmin:
+                    - büyükse → "Daha küçük bir sayı dene!"
+                    - küçükse → "Daha büyük bir sayı dene!"
+                    - doğruysa → "Tebrikler! Doğru bildin!" + deneme sayısı
+
+            4. Kullanıcı doğru bilene kadar döngü devam etsin (while / do-while).
+
+            5. Deneme sayısını tutan bir sayaç kullan:
+                    int attempts = 0;
+
+            6. Kod mutlaka ayrı bir sınıfta olacak:
+                    public class NumberGuess {
+                        public static void main(String[] args) {
+                            // Ödev buraya yapılacak
+                        }
+                    }
+
+            BONUS (İsteğe bağlı geliştirmeler):
+            - Kullanıcıya “1-100 arası sayı tuttum, tahmin et!” mesajı ver.
+            - Kullanıcı 0 girerse oyunu erken bitir.
+            - 10 denemeden uzun sürerse “Pes etme, başaracaksın!” gibi mesaj göster.
+            - Zorluk seviyesi ekle:
+                Kolay: 1-50
+                Orta: 1-100
+                Zor: 1-500
+
+            Teslim:
+            - Kod dosyası: NumberGuess.java
+            - GitHub'a push edilecek.
+
+            Son tarih: 14 ARALIK 2025 PAZAR
+            ===========================================================
+
+            Çalışmalarını yaparken Youtube ve Stackoverflow'dan yardım alabilirsin. Yapay zekayı minimum
+            düzeyde kullanmanı öneririm. İyi çalışmalar!
+            */
 
 
 
