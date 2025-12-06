@@ -255,7 +255,7 @@ public class Main {
             7. Kod mutlaka ayrı bir sınıfta yazılacaktır:
                     public class GradeCalculator {
                         public static void main(String[] args) {
-                            // Ödev buraya yapılacak
+
                         }
                     }
 
@@ -271,11 +271,55 @@ public class Main {
 
             Son tarih: 7 ARALIK 2025 PAZAR
             ===========================================================
-            */
+
+         */
+        class GradeCalculator {
+            void main(String[] args) {
+                Scanner scan = new Scanner(System.in);
+                System.out.print("Kaç ders yazacaksın ?");
+                int dersSayisi = scan.nextInt() ;
+                scan.nextLine() ;
+
+                int toplam = 0 ;
+
+                for (int i = 1;i <= dersSayisi; i++) {
+
+                    System.out.print(i + "dersin adı ");
+                    String dersAdi = scan.nextLine();
+
+                    System.out.print(dersAdi + "not:");
+                    int not = scan.nextInt();
+                    scan.nextLine();
+
+                    double ort = (double) toplam / dersSayisi ;
+
+                    String amerikan_tarzı_not_harflendirmesi = "";
+                    if (ort>= 90) amerikan_tarzı_not_harflendirmesi = "A :)";
+                    else if (ort>= 80) amerikan_tarzı_not_harflendirmesi = "B :|" ;
+                    else if (ort>=70) amerikan_tarzı_not_harflendirmesi = "C :|" ;
+                    else if (ort>=60) amerikan_tarzı_not_harflendirmesi = "D :|" ;
+                    else if (ort>=0)  amerikan_tarzı_not_harflendirmesi = "F :(" ;
+
+                    System.out.println("sonuç");
+                    System.out.println("Toplam:"+ toplam);
+                    System.out.println("ortalamanız:"+ort) ;
+                    System.out.println("harflendirilmiş not :" + amerikan_tarzı_not_harflendirmesi);
+
+
+                }
+
+
+            }
+        }
+
+        toplam += not;
+                }   }
 
 
 
-            /* 
+
+            /*
+
             ===========================================================
             =              MİNİ PROJE 2 - ÖDEV (NUMBER GUESS)         =
             ===========================================================
@@ -305,7 +349,9 @@ public class Main {
             6. Kod mutlaka ayrı bir sınıfta olacak:
                     public class NumberGuess {
                         public static void main(String[] args) {
-                            // Ödev buraya yapılacak
+
+
+
                         }
                     }
 
