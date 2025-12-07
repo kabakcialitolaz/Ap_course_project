@@ -305,6 +305,9 @@ public class Main {
                     System.out.println("ortalamanız:"+ort) ;
                     System.out.println("harflendirilmiş not :" + amerikan_tarzı_not_harflendirmesi);
 
+                    toplam += not;
+                    //BU KOD PARANTEZLERİN DIŞINDA KALMIŞTI. İÇERİ ALINCA DÜZELDİ
+
 
                 }
 
@@ -312,8 +315,9 @@ public class Main {
             }
         }
 
-        toplam += not;
-                }   }
+        //BU SENİN YAZDIĞIN KOD, PARANTER DIŞINDA KALDIĞI İÇİN HATA ALIYORDUN.
+        //toplam += not;
+                }   
 
 
 
@@ -378,4 +382,4 @@ public class Main {
 
 
     }
-}
+
