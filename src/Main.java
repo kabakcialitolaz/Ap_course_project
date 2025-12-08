@@ -273,8 +273,6 @@ public class Main {
             ===========================================================
 
          */
-        class GradeCalculator {
-            void main(String[] args) {
                 Scanner scan = new Scanner(System.in);
                 System.out.print("Kaç ders yazacaksın ?");
                 int dersSayisi = scan.nextInt() ;
@@ -317,7 +315,7 @@ public class Main {
 
         //BU SENİN YAZDIĞIN KOD, PARANTER DIŞINDA KALDIĞI İÇİN HATA ALIYORDUN.
         //toplam += not;
-                }   
+
 
 
 
@@ -376,10 +374,34 @@ public class Main {
             ===========================================================
 
             Çalışmalarını yaparken Youtube ve Stackoverflow'dan yardım alabilirsin. Yapay zekayı minimum
-            düzeyde kullanmanı öneririm. İyi çalışmalar!
-            */
+            düzeyde kullanmanı öneririm. İyi çalışmalar
+             */
 
-
+void main() {
+    System.out.println("haydi! tahminimi bil");
+    int secret = (int)(Math.random() * 100) + 1;
+    int thmin = 0 ;
+    Scanner scannnnner = new Scanner(System.in) ;
+    System.out.println("Tahminin ne ?????????: ");
+    int guess = scannnnner.nextInt() ;
+    thmin++;
+    if (secret<guess)
+     System.out.println("Tahmininiz yanlış lütfen daha küçük bir sayı dene");
+    else if (secret>guess)
+    System.out.println("tahmin yanlış lütfen daha büyük bir sayı girin");
+    else if (secret == guess)
+        System.out.println("TEBRİKLER BAŞARDINIZ"+thmin);
 
     }
+
+
+
+
+
+
+
+
+
+
+
 
