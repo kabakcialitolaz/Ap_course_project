@@ -380,18 +380,32 @@ public class Main {
 void main() {
     System.out.println("haydi! tahminimi bil");
     int secret = (int)(Math.random() * 100) + 1;
-    int thmin = 0 ;
     Scanner scannnnner = new Scanner(System.in) ;
+    int guess = 0 ;
+    int attempts = 0 ;
+    while (guess!=secret){
     System.out.println("Tahminin ne ?????????: ");
-    int guess = scannnnner.nextInt() ;
-    thmin++;
-    if (secret<guess)
-     System.out.println("Tahmininiz yanlış lütfen daha küçük bir sayı dene");
-    else if (secret>guess)
-    System.out.println("tahmin yanlış lütfen daha büyük bir sayı girin");
-    else if (secret == guess)
-        System.out.println("TEBRİKLER BAŞARDINIZ"+thmin);
+    guess = scannnnner.nextInt();
+    attempts++ ;
+        if (secret < guess) {
+            System.out.println("Tahmininiz yanlış lütfen daha küçük bir sayı dene");
+            guess++ ;
+        }
+        else if (secret > guess) {
+            System.out.println("tahmin yanlış lütfen daha büyük bir sayı girin");
+            guess++ ;
+        }
+        else if (secret == guess) {
+            System.out.println("TEBRİKLER BAŞARDINIZ  " + "Toplam deneme sayınız:" + attempts);
+        }
+            if (attempts>10) {
+                System.out.println("Yapabilirsin PES ETME!!!");
+            }
 
+
+
+
+    }
     }
 
 
