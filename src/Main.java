@@ -312,8 +312,11 @@ public class Main {
 
             }
         }
+
         //BU SENİN YAZDIĞIN KOD, PARANTER DIŞINDA KALDIĞI İÇİN HATA ALIYORDUN.
         //toplam += not;
+
+
 
 
 
