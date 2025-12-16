@@ -13,11 +13,17 @@ public class CalculatorV2 extends JFrame implements ActionListener {
     // --- UI Bileşenleri BURALARA ÇALIŞMANI VE HANGİ KODUN NE ANLAMA GELDİĞİNİ GOOGLE'DAN ARAŞTIRMANI, SONRA BURADA YORUM SATIRINDA
     // --- NOT ALMANI İSTİYORUM. BU SAYEDE KODU DAHA İYİ ANLAMIŞ OLURSUN. ---
     private final JTextField txtNum1 = new JTextField();
+    // bu kod 1 numarayı girmemizi saağlar
     private final JTextField txtNum2 = new JTextField();
+    // bu kodda 2. numarayı girmemizi sağlar
     private final JComboBox<String> cmbOp = new JComboBox<>(new String[]{"+", "-", "*", "/"});
+    // bu kod sayesinde hangi işlemleri yapabileceğimizi görürüz
     private final JButton btnHesapla = new JButton("Hesapla");
+    // burada j button tıklananbilir buton manasına gelir
     private final JButton btnTemizle = new JButton("Temizle");
+    // bu ise alanları temizler
     private final JLabel lblSonuc = new JLabel("Sonuç: ");
+    // j label sayesinde yazı gösterilmiş olur sonuç burda kullanıcıya gösterilmiş olur
 
     public CalculatorV2() {
         super("Hesap Makinesi");
@@ -108,7 +114,7 @@ public class CalculatorV2 extends JFrame implements ActionListener {
                 n1 = Double.parseDouble(s1);
                 n2 = Double.parseDouble(s2);
             } catch (NumberFormatException ex) {
-                showError("Geçersiz sayı girdin. Örn: 12, 3.5");
+                showError("Geçersiz sayı girdin veya harf Örn: 12, 3. R 5");
                 return;
             }
 
@@ -129,6 +135,27 @@ public class CalculatorV2 extends JFrame implements ActionListener {
      * - op beklenmeyen bir şeyse hata göster, null dön
      */
     private Double computeResult(double n1, double n2, String op) {
+        switch (op){
+            case "+":
+                return n1 + n2 ;
+            case "-":
+                return n1 - n2 ;
+            case "*":
+                return n1 * n2 ;
+            case "/":
+                if (n2==0){
+                    showError("bir sayıyı sıfıra bölemezsin!!!!");
+                    return null ;
+                }
+                return n1/n2 ;
+
+            default:
+                showError("bilinmeyen işlem"+ op);
+
+        }
+
+
+
         // İPUCU: switch-case burada çok iyi olur. Ne olduğuna Youtube üzerinden bakabilirsin.
         // switch (op) { case "+": return n1 + n2; ... }
 
